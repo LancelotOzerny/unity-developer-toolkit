@@ -13,6 +13,14 @@ public class CMenuTools : MonoBehaviour
     }
 
     /// <summary>
+    /// Метод, который позволяет перезапустить текущую сцену
+    /// </summary>
+    public void RestartSene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    /// <summary>
     /// Метод, который позволяет открыть сцену unity по URL
     /// </summary>
     /// <param name="index">Индекс открываемой сцены</param>
